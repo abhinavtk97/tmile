@@ -1,5 +1,6 @@
 <?php
            $subject_to='Takshak Miles Confirmation';
+           $email_new = "ashwinkjoseph@gmail.com";
             $email_to=$email_new;
             $message_to='Hi,<br/> We have recieved your request to sign in for "Takshak Miles", ';
             $message_to.='an online competition to travel and collect points through <strong>Mozilla Stumbler</strong>, ';
@@ -14,7 +15,10 @@
 
 
 
-
+ini_set('SMTP', 'smtp.sendgrid.net');
+ini_set('smtp_port', 465);
+ini_set('username', 'apikey');
+ini_set('password', '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');
 $headers = "From: miles@takshak.in";
         // boundary
         $semi_rand = md5(time());
