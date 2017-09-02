@@ -2,7 +2,7 @@
 error_reporting(0);
 
 require_once('connectvars.php');
-$dbc=mysqli_connect(DB_HOST2325,DB_USER2325,DB_PASSWORD2325,DB_NAME2325) or die('could not connect to database.');
+$dbc=mysqli_connect(DB_HOST2325,DB_USER2325,DB_PASSWORD2325,DB_NAME2325) or die('could not connect to database...................');
 $email_success=0;
 if(isset($_POST['submit']))
 {
@@ -50,37 +50,9 @@ if(isset($_POST['submit_new']))
         {
             $query='INSERT INTO email_verify (`email`,`rand`) VALUES ("'.$email_new.'","'.$rand.'");';
             mysqli_query($dbc,$query);
-            echo $rand;
 
 
-
-           $subject_to='Travel To Track Confirmation';
-            $email_to=$email_new;
-            $message_to='Hi,<br/> We have recieved your request to sign in for "Travel To Track", ';
-            $message_to.='an online competition to travel and collect points through <strong>Mozilla Stumbler</strong>, ';
-            $message_to.='an android app(firefox os app also available) and get rewarded.<br/><br/>';
-            $message_to.="We have recieved a registration for this email id. Click on the link below to activate the competition. Please ignore this message if you haven't registered for the event.<br/>";
-            $message_to.='<a href="http://hashtagofficial.in/travel/login.php?type=verify&email='.$email_new.'&rand='.$rand.'">http://hashtagofficial.in/travel/login.php?type=verify&email='.$email_new.'&rand='.$rand.'</a><br/><br/>';
-            $message_to.='For more information <a href="http://hashtagofficial.in/travel/">Click Here</a><br/><br/>';
-            $message_to.='Thanks,<br/>Hashtag Online Team<br/><a href="http://hashtagofficial.in/">
-            <img src="http://hashtagofficial.in/mail_footer.png" alt="Silver Jubilee Celebration | CSE Dept."></a>';
-
-
-
-
-
-
-$headers = 'From: abhinavtk97@gmail.com' . "\r\n" .
-    'Reply-To: abhinavtk97@gmail.com' . "\r\n" .
-    'X-Mailer: PHP/' . phpversion();
-
-mail($email_new, $subject_to, $message_to, $headers);
-
-
-
-
-
-            //require_once('test.php');
+            require_once('test.php');
 
         }
     }
@@ -93,10 +65,10 @@ mail($email_new, $subject_to, $message_to, $headers);
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="description" content="TRAVEL TO WIN">
-    <title>Takshak Miles</title>
+    <title>T-Mile</title>
     <link rel="shortcut icon" href="/sponsor/images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/sponsor/images/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+ <link rel="icon" href="assets/img/logo2.png" >
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/user.css">
     <link rel="stylesheet" href="main_travel.css">
@@ -106,7 +78,7 @@ mail($email_new, $subject_to, $message_to, $headers);
 
         <nav class="navbar navbar-default">
         <div class="container">
-            <div class="navbar-header"><a class="navbar-brand navbar-link" href="index.php"><i class="glyphicon glyphicon-phone"></i>Takshak Miles</a>
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="index.php"><i class="glyphicon glyphicon-phone"></i>T-Mile</a>
                 <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
             </div>
             <div class="collapse navbar-collapse" id="navcol-1">
@@ -209,7 +181,7 @@ mail($email_new, $subject_to, $message_to, $headers);
             <div id="leaderboard" align="center">
 
                 <a href="http://www.takshak.in" > <img src="assets/img/logo.png" alt="TAKSHAK" id="logo" width="200"> </a>
-                    <br/><span style="font-size:20px">'Travel To Win'</span>
+                    <br/><span style="font-size:20px">-- For the love of Wandering --</span>
                 <br/>
                 <h3 style="color:#FFFFFF;">Leaderboard</h3>
                 <table id="table">
@@ -244,15 +216,18 @@ mail($email_new, $subject_to, $message_to, $headers);
                 </div>
             </div>
         </div>
-    </div>
 
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h5>Takshak © 2017</h5></div>
+                <div class="col-sm-6 social-icons"><a href="https://www.facebook.com/TakshakOfficial/"><i class="fa fa-facebook"></i></a><a href="https://twitter.com/takshakofficial"><i class="fa fa-twitter"></i></a><a href="https://www.instagram.com/takshak_17"><i class="fa fa-instagram"></i></a></div>
+            </div>
+        </div>
+    </footer>
+    <div id="leader_loader">
 
-
-
-    <div id="container1">
-    <div class="padder">
-
-    </div>
     </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>

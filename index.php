@@ -5,9 +5,9 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="description" content="TRAVEL TO WIN">
-    <title>Takshak Miles</title>
+    <title>T-Mile</title>
     <link rel="shortcut icon" href="/sponsor/images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/sponsor/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/img/logo2.png" >
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/user.css">
@@ -33,7 +33,7 @@
 
     <nav class="navbar navbar-default">
         <div class="container">
-            <div class="navbar-header"><a class="navbar-brand navbar-link" href="#"><i class="glyphicon glyphicon-phone"></i>Takshak Miles</a>
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="#"><i class="glyphicon glyphicon-phone"></i>T-Mile</a>
                 <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
             </div>
             <div class="collapse navbar-collapse" id="navcol-1">
@@ -55,8 +55,8 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-md-pull-3 get-it">
-                    <h1>Takshak Miles</h1>
-                    <p>"Travel To Track"<br>Travel more and win exciting prizes
+                    <h1>T-Mile</h1>
+                    <p>-- For the love of Wandering --<br>
 </p>
                     <div>
                     <form method="post" action="process.php">
@@ -134,7 +134,7 @@
             <div class="row">
                 <div class="col-sm-6">
                     <h5>Takshak © 2017</h5></div>
-                <div class="col-sm-6 social-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                <div class="col-sm-6 social-icons"><a href="https://www.facebook.com/TakshakOfficial/"><i class="fa fa-facebook"></i></a><a href="https://twitter.com/takshakofficial"><i class="fa fa-twitter"></i></a><a href="https://www.instagram.com/takshak_17"><i class="fa fa-instagram"></i></a></div>
             </div>
         </div>
     </footer>

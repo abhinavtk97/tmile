@@ -90,7 +90,7 @@ else
                 $nick_creator=explode(" ",strtolower($name));
                 if(strlen($nick_creator[0])>8)
                     $nick_creator[0]=substr($nick_creator[0],0,8);
-                $nick=$nick_creator[0].'-bit.ly/_HASH';
+                $nick=$nick_creator[0].'-bit.ly/_MILE';
                     $flag=0;
                 while($flag==0)
                 {
@@ -100,7 +100,7 @@ else
                     $data1=mysqli_query($dbc,$query1);
                     if(mysqli_num_rows($data)>0||mysqli_num_rows($data1)>0)
                     {
-                        $nick=$nick_creator[0].rand(11,99).'-bit.ly/_HASH';
+                        $nick=$nick_creator[0].rand(11,99).'-bit.ly/_MILE';
                     }
                     else
                         $flag=1;
@@ -118,6 +118,31 @@ else
                         setcookie('token',rand(183458254915491539263,139163916301630909968689696986986));
                 }
                 header('Location:howto.php?email='.$email);
+
+
+                 $subject_to='T-Mile Confirmation';
+            $email_to=$email;
+            $message_to='Congratulations,<br/> You have Successfully signed up for "T-Mile", ';
+                $message_to.='<br>Your Nickname is '.$nick;
+            $message_to.='For more information <a href="http://traveller.takshak.in/">Click Here</a><br/><br/>';
+            $message_to.='Thanks,<br/>Takshak Miles Team<br/><a href="http://takshak.in/">
+            <img src="http://traveller.takshak.in/abhinav/assets/img/logo.png" alt="Takshak 17."></a>';
+
+
+
+
+
+
+$headers = "From: mile@takshak.in";
+        // boundary
+        $semi_rand = md5(time());
+        $mime_boundary = "==Multipart_Boundary_x{$semi_rand}x";
+        // headers for attachment
+        $headers .= "\nMIME-Version: 1.0\n" . "Content-Type: multipart/mixed;\n" . " boundary=\"{$mime_boundary}\"";
+        // multipart boundary
+        $message_to .= "This is a multi-part message in MIME format.\n\n" . "--{$mime_boundary}\n" . "Content-Type: text/html; charset=\"iso-8859-1\"\n" . "Content-Transfer-Encoding: 7bit\n\n" . $message_to . "\n\n";
+        $message_to .= "--{$mime_boundary}\n";
+                mail($email_new, $subject_to, $message_to, $headers);
             }
         }
     }
@@ -129,9 +154,9 @@ else
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="description" content="TRAVEL TO WIN">
-    <title>Takshak Miles</title>
+    <title>T-Mile</title>
     <link rel="shortcut icon" href="/sponsor/images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/sponsor/images/favicon.ico" type="image/x-icon">
+ <link rel="icon" href="assets/img/logo2.png" >
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/user.css">
@@ -139,7 +164,7 @@ else
 <body>
     <nav class="navbar navbar-default">
         <div class="container">
-            <div class="navbar-header"><a class="navbar-brand navbar-link" href="index.php"><i class="glyphicon glyphicon-phone"></i>Takshak Miles</a>
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="index.php"><i class="glyphicon glyphicon-phone"></i>T-Mile</a>
                 <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
             </div>
             <div class="collapse navbar-collapse" id="navcol-1">

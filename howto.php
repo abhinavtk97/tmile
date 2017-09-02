@@ -1,4 +1,6 @@
 <?php
+error_reporting(0);
+
 require_once('connectvars.php');
 $dbc=mysqli_connect(DB_HOST2325,DB_USER2325,DB_PASSWORD2325,DB_NAME2325) or die('could not connect to database :((((.');
 
@@ -45,9 +47,9 @@ if($email!='The Registered E-mail')
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="description" content="TRAVEL TO WIN">
-    <title>Takshak Miles</title>
+    <title>T-Mile</title>
     <link rel="shortcut icon" href="/sponsor/images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/sponsor/images/favicon.ico" type="image/x-icon">
+ <link rel="icon" href="assets/img/logo2.png" >
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/user.css">
@@ -55,7 +57,7 @@ if($email!='The Registered E-mail')
 <body>
     <nav class="navbar navbar-default">
         <div class="container">
-            <div class="navbar-header"><a class="navbar-brand navbar-link" href="index.php"><i class="glyphicon glyphicon-phone"></i>Takshak Miles</a>
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="index.php"><i class="glyphicon glyphicon-phone"></i>T-Mile</a>
                 <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
             </div>
             <div class="collapse navbar-collapse" id="navcol-1">
@@ -75,7 +77,7 @@ if($email!='The Registered E-mail')
               <!--  <div class="col-xs-5 col-centered" align="center">-->
                    <div align="center">
 
-                    <h1>HOW TO 'Travel To Track'?<br/><br/></h1>
+                    <h1>How to 'T-mile'?<br/><br/></h1>
             <form method="post" action="howto.php">
                 <span class="icon-mail" id="mail_icon"></span>
                 <input class ="form-control" type="email" id="search" name="search" placeholder="Your e-mail id." required value="<?php if(isset($email)&& $email!='The Registered E-mail') echo $email;?>"><br/>
@@ -97,9 +99,9 @@ if($email!='The Registered E-mail')
 
          </div>
     </center>
-           <h2 class="text-center"> Hi, let's see how you can start with our system :)<br/>
-            First you need to have <strong>an Android phone or Firefox OS Phone</strong>
-               Mozilla Stumbler for Android<br><br><br>
+           <h2 class="text-center">Hola, let's see how you can start with our system.<br/>It's easy-peasy lemon squeezy.<br>
+            ☺ Firstly, you gotta have <strong>an Android phone or Firefox OS Phone, </strong><br>
+               and then get the Mozilla Stumbler for Android. <br><br><br>
 
                 <a href="https://play.google.com/store/apps/details?id=org.mozilla.mozstumbler" target="_blank">
                     <img title="Get Mozilla Stumbler on Google Play" src="images/google_play.png"></a>
@@ -115,24 +117,31 @@ if($email!='The Registered E-mail')
                                             <div class="col-md-6">
 
 
-            <p>Yay! Now you have downloaded the tool to map your way.<br/>By using the app you are contributing to the open source community :) For more details <a href="https://location.services.mozilla.com" target="_blank">click here</a>.<br/><br/>The following are the next steps to be done for android users.<br/><br/>
-            <span class="icon-checkmark"></span> Open the app<br/><br/><br/>
-            <img class ="col-md-12"  width="100%"src="images/screenshot.jpg" alt="screenshot" id="screenshot"><br/><br/>
-            <span class="icon-checkmark"></span> Open up the left panel.<br/><br/>
-            <span class="icon-checkmark"></span> Click the settings icon<br/><br/>
+          <center> <p>Yay! Now that you've downloaded the tool to map your wander ways,<br> these are the steps you wanna follow:<br/><br><br>
+                <img class ="col-md-12"  width="100%"src="images/screenshot.jpg" alt="screenshot" id="screenshot"><br/><br/>
+            <span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;1. Open the app. <br/><br/>
+            <span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;2. Go to the panel on the left.<br/><br/>
+            <span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;3. Choose that settings icon down below.<br/><br/>
 
-            <span class="icon-checkmark"></span> Login with your Firefox account with "<?php echo $email; ?>" or create a new account<br/><br/>
-                <span class="icon-checkmark"></span><span style="font-weight:bold;"> Change the nick name to "<?php echo $nick; ?>"</span> (You can always find your nick name by searching your email in the home page)<br/><br/>
-            <strong>Now you are all set to go. But consider these points too.<br/><br/></strong>
-            <span class="icon-checkmark"></span> You don't need internet to collect points.<br/><br/>
-            <span class="icon-checkmark"></span> It is adviced to <strong>turn ON 'location'</strong> in Android settings.<br/><br/>
-            <span class="icon-checkmark"></span> You can always turn stumbling ON/OFF.<br/><br/>
-            <span class="icon-checkmark"></span> You can upload your points through the left panel when there is internet connectivity. Auto upload is also available in the settings.<br/><br/>
-            <span class="icon-checkmark"></span> Points collected in the current session will be shown near the binocular image in the main page.<br/><br/>
-            <span class="icon-checkmark"></span> <span class="icon-checkmark"></span> Points you have submitted will take some time to appear in the leaderboard. Sometimes hours depending on how Mozilla updates their leaderboard.<br/><br/>
-            <span class="icon-checkmark"></span> <span class="icon-checkmark"></span> You won't appear in the leaderboard if you have less than 10 points. Don't worry, a walk around your home can get you 10 points.<br/><br/>
-            <span class="icon-checkmark"></span> You can always contact us at <h3>email@email.in</h3><br/><br/>
+          <span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;After that, login with your Firefox account using your "<?php echo $email; ?>" or create a new account<br/><br/>
+              <span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;<span style="font-weight:bold;"> 5. Now, you change the nickname to "<?php echo $nick; ?>"</span> (You can always find your nick name by searching your email in the home page)<br/><br/>
+           <h4> <strong>That's mostly it. Guess you're all set to go. Happy wandering!
+<br/><br/></strong></h4>
+               <h3> Psst! It would be great for you to consider these as well:</h3>
+            <span class="glyphicon glyphicon-cloud"></span>&nbsp;&nbsp;&nbsp;1. You don't have to be connected to the internet to collect wander points.<br/><br/>
+         <span class="glyphicon glyphicon-cloud"></span>&nbsp;&nbsp;&nbsp;2. However, it is advised to <strong>turn ON 'location'</strong> in Android settings.<br/><br/>
+           <span class="glyphicon glyphicon-cloud"></span>&nbsp;&nbsp;&nbsp;3. You may always choose to turn stumbler ON/OFF.<br/><br/>
+         <span class="glyphicon glyphicon-cloud"></span>&nbsp;&nbsp;&nbsp;4. You can upload your collected points through the left panel itself, when you have internet connectivity. Besides, auto-upload is available within its settings.<br/><br/>
+           <span class="glyphicon glyphicon-cloud"></span>&nbsp;&nbsp;&nbsp;5. Points collected by you during the current session will be shown near that binocular image on the main page.<br/><br/>
+          <span class="glyphicon glyphicon-cloud"></span>&nbsp;&nbsp;&nbsp;  6. The points that you've submitted may take some time to upload to the leaderboard. Sometimes, it sorta takes hours on end for it to happen--that mostly depends on how Mozilla updates their leaderboard.<br/><br/>
+         <span class="glyphicon glyphicon-cloud"></span>&nbsp;&nbsp;&nbsp;  7. You might not appear in the leaderboard if you've less than 10 points.<br> Don't worry you, because a stroll around your home can easily get you your 10 points.<br/><br/>
+                                                Cheers!<br>
+                                                <br>
+
+P.S.: By using the app you're contributing to the open source community :) For more details <a href="https://location.services.mozilla.com/">click here</a>.<br><br>
+            <span class="icon-checkmark"></span> You can always contact us at <h3>takshak17app@gmail.com</h3><br/><br/>
     <h4 style="padding-bottom:10px;">Check out our <a href="process.php">leaderboard</a> for rank details.</h4>
+              </center>
         </div>
             </div>
 
@@ -143,7 +152,7 @@ if($email!='The Registered E-mail')
             <div class="row">
                 <div class="col-sm-6">
                     <h5>Takshak © 2017</h5></div>
-                <div class="col-sm-6 social-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                <div class="col-sm-6 social-icons"><a href="https://www.facebook.com/TakshakOfficial/"><i class="fa fa-facebook"></i></a><a href="https://twitter.com/takshakofficial"><i class="fa fa-twitter"></i></a><a href="https://www.instagram.com/takshak_17"><i class="fa fa-instagram"></i></a></div>
             </div>
         </div>
     </footer>

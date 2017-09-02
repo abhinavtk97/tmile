@@ -1,9 +1,11 @@
 <?php
-$dbc=mysqli_connect("localhost","themanpy_takshak","#takshak#beginwithin","themanpy_takshak17") or die('could not connect to database.');
+error_reporting(0);
+
+$dbc=mysqli_connect("ipobfcpvprjpmdo9.cbetxkdyhwsb.us-east-1.rds.amazonaws.com","hi623hpsz4cll2al","hcwd5drm3begpx91","kc3zumqqccjyjlq3") or die('could not connect to database....');
     //$dbc=mysqli_connect(DB_HOST2325,DB_USER2325,DB_PASSWORD2325,DB_NAME2325) or die('could not connect to database.');
 
     try{
-        $handler = new PDO("mysql:host=127.0.0.1;dbname=moz;charset=utf8", "root", "");
+        $handler = new PDO("mysql:host=ipobfcpvprjpmdo9.cbetxkdyhwsb.us-east-1.rds.amazonaws.com;dbname=kc3zumqqccjyjlq3;charset=utf8", "hi623hpsz4cll2al", "hcwd5drm3begpx91");
         $handler->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     }
     catch(PDOException $e){
@@ -11,6 +13,7 @@ $dbc=mysqli_connect("localhost","themanpy_takshak","#takshak#beginwithin","thema
     }
     $i=0;
     ini_set('max_execution_time', 0);
+        ini_set("allow_url_fopen", 1);
 
     $query="SELECT * FROM our_travel";  //Getting details of registered users.
 $data=mysqli_query($dbc,$query);

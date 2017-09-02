@@ -1,4 +1,6 @@
 <?php
+error_reporting(0);
+
 if(isset($_GET['ref']))
 {
     if(!empty($_GET['ref']))
