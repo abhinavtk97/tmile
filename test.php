@@ -36,5 +36,8 @@ $ok = mail($email_new, $subject_to, $message_to, $headers);
  if ($ok) {
                 echo "<p>mail sent to $to!</p>";
 $email_success=3;        }
+else{
+        error_get_last();
+}
 
 ?>
