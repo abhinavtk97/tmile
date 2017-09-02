@@ -30,7 +30,8 @@
 //$email_success=3;        }
 
 //  require("sendgrid-php.php");
-require 'vendor/autoload.php';
+// require 'vendor/autoload.php';
+require("./sendgrid-php/sendgrid-php.php");
 $from = new SendGrid\Email("T-Mile", "mile@takshak.com");
 $subject = "Sending with SendGrid is Fun";
 $to = new SendGrid\Email("User", $email_to);
