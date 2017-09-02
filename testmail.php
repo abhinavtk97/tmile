@@ -31,7 +31,7 @@
 
 //  require("sendgrid-php.php");
 // require 'vendor/autoload.php';
-require("https://takshaktravel.herokuapp.com/sendgrid-php/sendgrid-php.php");
+require($_SERVER['DOCUMENT_ROOT']."/sendgrid-php/sendgrid-php.php");
 $from = new SendGrid\Email("T-Mile", "mile@takshak.com");
 $subject = "Sending with SendGrid is Fun";
 $to = new SendGrid\Email("User", $email_to);
