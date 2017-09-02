@@ -20,7 +20,8 @@
 // ini_set('smtp_port', 465);
 // ini_set('username', 'apikey');
 // ini_set('password', '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');4
-require($_SERVER['DOCUMENT_ROOT']."/Mail/Mail.php");
+require_once "Mail.php";
+
 $headers = "From: miles@takshak.in";
         // boundary
         $semi_rand = md5(time());
