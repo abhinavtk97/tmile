@@ -32,9 +32,6 @@
 //$email_success=3;        }
 
 //  require("sendgrid-php.php");
-if (!extension_loaded('mbstring.so')) {
-    dl('mbstring.so');  
-}
 require 'vendor/autoload.php';
 // require($_SERVER['DOCUMENT_ROOT']."/sendgrid-php/sendgrid-php.php");
 $from = new SendGrid\Email("T-Mile", "mile@takshak.com");
