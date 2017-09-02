@@ -1,0 +1,13 @@
+{
+    "name": "abhinav/traveller",
+    "description": "implementation of moz stumbler",
+    "type": "project",
+    "authors": [{
+        "name": "Abhinav T K",
+        "email": "abhinavtk@gmail.com"
+    }],
+    "minimum-stability": "alpha",
+    "require": {
+        "sendgrid/sendgrid": "~6.0"
+    }
+}

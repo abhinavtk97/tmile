@@ -1,6 +1,8 @@
 <?php
 
   $subject_to='Takshak Miles Confirmation';
+  $email_new = "ashwinkjoseph@gmail.com";
+  $rand = "2";
         $email_to=$email_new;
           $message_to='Hi,<br/> We have recieved your request to sign in for "Takshak Miles", ';
             $message_to.='an online competition to travel and collect points through <strong>Mozilla Stumbler</strong>, ';
@@ -30,14 +32,14 @@
 //$email_success=3;        }
 
 //  require("sendgrid-php.php");
-// require 'vendor/autoload.php';
-require($_SERVER['DOCUMENT_ROOT']."/sendgrid-php/sendgrid-php.php");
+require 'vendor/autoload.php';
+// require($_SERVER['DOCUMENT_ROOT']."/sendgrid-php/sendgrid-php.php");
 $from = new SendGrid\Email("T-Mile", "mile@takshak.com");
 $subject = "Sending with SendGrid is Fun";
 $to = new SendGrid\Email("User", $email_to);
 $content = new SendGrid\Content("text/html", $message_to);
 $mail = new SendGrid\Mail($from, $subject_to, $to, $content);
-$apiKey = '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';
+$apiKey = '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';
 $sg = new \SendGrid($apiKey);
 $response = $sg->client->mail()->send()->post($mail);
 echo $response->statusCode();
