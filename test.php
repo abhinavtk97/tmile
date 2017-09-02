@@ -18,7 +18,7 @@
 ini_set('SMTP', 'smtp.sendgrid.net');
 ini_set('smtp_port', 465);
 ini_set('username', 'apikey');
-ini_set('password', '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');
+ini_set('password', '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');
 $headers = "From: miles@takshak.in";
         // boundary
         $semi_rand = md5(time());
