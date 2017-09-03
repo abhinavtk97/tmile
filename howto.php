@@ -1,6 +1,5 @@
 <?php
 error_reporting(0);
-
 require_once('connectvars.php');
 $dbc=mysqli_connect(DB_HOST2325,DB_USER2325,DB_PASSWORD2325,DB_NAME2325) or die('could not connect to database :((((.');
 
@@ -114,7 +113,6 @@ if($email!='The Registered E-mail')
     <section class="features">
         <div class="container">
                         <div class="row">
-                                            <div class="col-md-6">
 
 
           <center> <p>Yay! Now that you've downloaded the tool to map your wander ways,<br> these are the steps you wanna follow:<br/><br><br>
@@ -145,7 +143,6 @@ P.S.: By using the app you're contributing to the open source community :) For m
         </div>
             </div>
 
-    </div>
     </section>
             <footer class="site-footer">
         <div class="container">

@@ -7,6 +7,7 @@ $verific=0;
 $sys_verified=0;
 $used=0;
 $plain_login=0;
+$email=null;
 
 if(isset($_GET['type'])||isset($_POST['rand']))
 { if($_GET['type']==verify)
@@ -107,7 +108,7 @@ else
                 }
                 $query='INSERT INTO our_travel (`nick`,`email`,`name`,`password`,`college`,`phno`) VALUES ';
                 $query.='("'.$nick.'","'.$email.'","'.$name.'","'.$password.'","'.$college.'","'.$phno.'")';
-                mysqli_query($dbc,$query) or die("Error adding user");
+                mysqli_query($dbc,$query) or die("Error adding user . Did you already register with the email id");
 
                 $query='UPDATE email_verify SET used=1 WHERE email="'.$email.'"';
                 mysqli_query($dbc,$query);

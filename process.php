@@ -51,9 +51,12 @@ if(isset($_POST['submit_new']))
             $query='INSERT INTO email_verify (`email`,`rand`) VALUES ("'.$email_new.'","'.$rand.'");';
             mysqli_query($dbc,$query);
 
-
-            require_once('test.php');
-
+            $url2 = 'http://traveller.takshak.in/abhinav/emsend.php?type=send&email='.$email_new.'&rand='.$rand;
+            $response = file_get_contents($url2);
+            if ($response){
+                $email_success=3;
+            }
+            //var_dump($response);
         }
     }
 }
@@ -170,7 +173,7 @@ if(isset($_POST['submit_new']))
                             echo '<tr><td>Global Rank: </td> <td>'.$globalrank_print.'</td</tr>';
                             echo '</table>';
                             }
-                            echo '  <strong><a href="update.php">Click here</a> if you want to try updating.</strong>';
+                            echo '  <strong><a href="http://takshaktravel.herokuapp.com/update.php">Click here</a> if you want to try updating.</strong>';
                             echo '</div>';
 
 
@@ -232,7 +235,7 @@ if(isset($_POST['submit_new']))
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>
         $(window).load(function(){
-            $('#leader_loader').load('cron.php');
+            $('#leader_loader').load('http://takshaktravel.herokuapp.com/cron.php');
         });
     </script>
         <script src="assets/js/jquery.min.js"></script>

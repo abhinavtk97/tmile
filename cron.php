@@ -1,6 +1,5 @@
 <?php
 error_reporting(0);
-
 $dbc=mysqli_connect("ipobfcpvprjpmdo9.cbetxkdyhwsb.us-east-1.rds.amazonaws.com","hi623hpsz4cll2al","hcwd5drm3begpx91","kc3zumqqccjyjlq3") or die('could not connect to database....');
     //$dbc=mysqli_connect(DB_HOST2325,DB_USER2325,DB_PASSWORD2325,DB_NAME2325) or die('could not connect to database.');
 
@@ -40,7 +39,7 @@ ini_set("allow_url_fopen", 1);
 while($j<=$s)
 {
 $json = file_get_contents('https://location-leaderboard.services.mozilla.com/api/v1/leaders/country/IN/?offset='.$k.'');
-$arr = json_decode($json);
+echo("<script>console.log('hi');</script>");$arr = json_decode($json);
 //    print_r($arr);
      $l= $arr->count;
     echo $l;
