@@ -19,9 +19,7 @@
 // ini_set('SMTP', 'smtp.sendgrid.net');
 // ini_set('smtp_port', 465);
 // ini_set('username', 'apikey');
-// ini_set('password', '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');4
-require($_SERVER['DOCUMENT_ROOT']."/Mail/Mail.php");
-
+// ini_set('password', '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');
 $headers = "From: miles@takshak.in";
         // boundary
         $semi_rand = md5(time());
@@ -32,45 +30,60 @@ $headers = "From: miles@takshak.in";
         $message_to .= "This is a multi-part message in MIME format.\n\n" . "--{$mime_boundary}\n" . "Content-Type: text/html; charset=\"iso-8859-1\"\n" . "Content-Transfer-Encoding: 7bit\n\n" . $message_to . "\n\n";
         $message_to .= "--{$mime_boundary}\n";
 
-        $to = $email_new;
-        $subject = $subject_to;
-        $body = $message_to;
+      //   $to = $email_new;
+      //   $subject = $subject_to;
+      //   $body = $message_to;
         
-        $host = "smtp.sendgrid.net";
-        $port = "465";
-        $username = "apikey";
-        $password = "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";
-        $from = "traveller@takshak.in";
+      //   $host = "smtp.sendgrid.net";
+      //   $port = "465";
+      //   $username = "apikey";
+      //   $password = "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";
+      //   $from = "traveller@takshak.in";
         
-        $headers = array ('From' => $from,
-          'To' => $to,
-          'Subject' => $subject);
-        $smtp = Mail::factory('smtp',
-          array ('host' => $host,
-            'port' => $port,
-            'auth' => true,
-            'username' => $username,
-            'password' => $password));
+      //   $headers = array ('From' => $from,
+      //     'To' => $to,
+      //     'Subject' => $subject);
+      //   $smtp = Mail::factory('smtp',
+      //     array ('host' => $host,
+      //       'port' => $port,
+      //       'auth' => true,
+      //       'username' => $username,
+      //       'password' => $password));
         
-        $mail = $smtp->send($to, $headers, $body);
+      //   $mail = $smtp->send($to, $headers, $body);
         
-        if (PEAR::isError($mail)) {
-          echo("
-       " . $mail->getMessage() . "
+      //   if (PEAR::isError($mail)) {
+      //     echo("
+      //  " . $mail->getMessage() . "
        
-       ");  } else {   echo("
-       Message successfully sent!
+      //  ");  } else {   echo("
+      //  Message successfully sent!
        
-       ");  } ?>
+      //  ");  } 
 
-<!-- $ok = mail($email_new, $subject_to, $message_to, $headers);
+// $ok = mail($email_new, $subject_to, $message_to, $headers);
 
- if ($ok) {
-                echo "<p>mail sent to $to!</p>";
-$email_success=3;
-}
-else{
-        error_get_last();
-} -->
+//  if ($ok) {
+//                 echo "<p>mail sent to $to!</p>";
+// $email_success=3;
+// }
+// else{
+//         error_get_last();
+// }
 
-<!-- ?> -->
+require 'vendor/autoload.php';
+// require($_SERVER['DOCUMENT_ROOT']."/sendgrid-php/sendgrid-php.php");
+$from = new SendGrid\Email("T-Mile", "mile@takshak.com");
+$subject = $subject_to;
+$to = new SendGrid\Email("User", $email_to);
+$content = new SendGrid\Content("text/html", $message_to);
+$mail = new SendGrid\Mail($from, $subject_to, $to, $content);
+$apiKey = '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';
+$sg = new \SendGrid($apiKey);
+$response = $sg->client->mail()->send()->post($mail);
+echo $response->statusCode();
+print_r($response->headers());
+echo $response->body();
+$email_success=3;    
+
+?>
