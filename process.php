@@ -188,7 +188,7 @@ if(isset($_POST['submit_new']))
                 <br/>
                 <h3 style="color:#FFFFFF;">Leaderboard</h3>
                 <table id="table">
-                  <tr><th>Rank</th> <th>Name</th> <th>College</th> <th>Score</th> <th>Global Rank</th></tr>
+                  <tr><th>Rank</th> <th>Name</th> <th>College</th> <th>Score</th> <th>Global Rank(IN)</th></tr>
                 <?php
               $query="SELECT name, score,college, globalrank FROM our_travel ORDER BY score DESC";
                     $data=mysqli_query($dbc,$query);
