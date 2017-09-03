@@ -86,9 +86,9 @@
     </div>
 
         <section class="testimonials">
-        <h2 class="text-center">Win Exciting prices just by travelling!</h2>
+        <h2 class="text-center">Win Exciting prices just by wandering!</h2>
         <blockquote>
-            <p>You just have to install the app and do your stuff.</p>
+            <p>For details on how to participate click<a href="howto.php"> here </a></p>
             <footer>MACE</footer>
         </blockquote>
     </section>
