@@ -77,7 +77,7 @@
           </label>
         </div>';
                     ?>
-               <br/> <input class="btn btn-primary btn-lg" type="submit" id="submit" name="submit" value="Sign Up/Search">
+               <br/> <input class="section-heading text-white" type="submit" id="submit" name="submit" value="Sign Up/Search">
             </form>
 </div>
                 </div>
