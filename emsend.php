@@ -14,10 +14,10 @@ if(isset($_GET['type'])||isset($_POST['rand']))
             $message_to.='an online competition to travel and collect points through <strong>Mozilla Stumbler</strong>, ';
             $message_to.='an android app(firefox os app also available) and get rewarded.<br/><br/>';
             $message_to.="We have recieved a registration for this email id. Click on the link below to activate the competition. Please ignore this message if you haven't registered for the event.<br/>";
-            $message_to.='<a href="http://traveller.takshak.in/abhinav/login.php?type=verify&email='.$email_new.'&rand='.$rand.'">http://traveller.takshak.in/abhinav/login.php?type=verify&email='.$email_new.'&rand='.$rand.'</a><br/><br/>';
-            $message_to.='For more information <a href="http://traveller.takshak.in/">Click Here</a><br/><br/>';
+            $message_to.='<a href="http://takshakmile.herokuapp.com/login.php?type=verify&email='.$email_new.'&rand='.$rand.'">http://takshakmile.herokuapp.com/login.php?type=verify&email='.$email_new.'&rand='.$rand.'</a><br/><br/>';
+            $message_to.='For more information <a href="http://takshakmile.herokuapp.com/">Click Here</a><br/><br/>';
             $message_to.='Thanks,<br/>Takshak Miles Team<br/><a href="http://takshak.in/">
-            <img src="http://traveller.takshak.in/abhinav/assets/img/logo.png" alt="Takshak 17."></a>';
+            <img src="http://takshakmile.herokuapp.com/assets/img/logo.png" alt="Takshak 17."></a>';
 
       $headers = "From: miles@takshak.in";
         // boundary

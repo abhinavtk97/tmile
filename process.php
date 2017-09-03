@@ -51,7 +51,7 @@ if(isset($_POST['submit_new']))
             $query='INSERT INTO email_verify (`email`,`rand`) VALUES ("'.$email_new.'","'.$rand.'");';
             mysqli_query($dbc,$query);
 
-            $url2 = 'http://traveller.takshak.in/abhinav/emsend.php?type=send&email='.$email_new.'&rand='.$rand;
+            $url2 = 'http://takshakmile.herokuapp.com/emsend.php?type=send&email='.$email_new.'&rand='.$rand;
             $response = file_get_contents($url2);
             if ($response){
                 $email_success=3;
