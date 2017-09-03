@@ -57,13 +57,13 @@ if($email!='The Registered E-mail')
 <body>
     <nav class="navbar navbar-default">
         <div class="container">
-            <div class="navbar-header"><a class="navbar-brand navbar-link" href="index.php"><i class="glyphicon glyphicon-phone"></i>T-Mile</a>
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="#"><i class="glyphicon glyphicon-phone"></i>T-Mile</a>
                 <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
             </div>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li role="presentation"> <a href="http://takshak.in">Takshak Home </a> </li>
-        <li role="presentation" title="Home"> <a href="index.php">Home</a> </li>
+                    <li  role="presentation"> <a href="http://takshak.in">Takshak Home </a> </li>
+        <li  role="presentation" title="Home"> <a href="index.php">Home</a> </li>
         <li role="presentation" > <a href="process.php">Leaderboard</a> </li>
         <li class="active" role="presentation" > <a href="howto.php">HowTo?</a> </li>
                 </ul>

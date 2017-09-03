@@ -89,7 +89,7 @@
         <h2 class="text-center">Win Exciting prices just by wandering!</h2>
         <blockquote>
             <p>For details on how to participate click<a href="howto.php"> here </a></p>
-            <footer>MACE</footer>
+            <footer>T-Mile Team</footer>
         </blockquote>
     </section>
     <section class="features">
