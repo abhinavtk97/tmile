@@ -170,7 +170,7 @@ if(isset($_POST['submit_new']))
                             echo '<tr><td>Nick Name: </td> <td>'.$nick_print.'</td</tr>';
                             echo '<tr><td>Score: </td> <td>'.$score_print.'</td</tr>';
                             echo '<tr><td>College: </td> <td>'.$college_print.'</td</tr>';
-                            echo '<tr><td>Global Rank: </td> <td>'.$globalrank_print.'</td</tr>';
+                            echo '<tr><td>Global Rank(IN): </td> <td>'.$globalrank_print.'</td</tr>';
                             echo '</table>';
                             }
                             echo '  <strong><a href="update.php">Click here</a> if you want to try updating.</strong>';
