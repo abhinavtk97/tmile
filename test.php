@@ -1,8 +1,8 @@
 <?php
            $subject_to='Takshak Miles Confirmation';
-           $email_new = "ashwinkjoseph@gmail.com";
+          //  $email_new = "ashwinkjoseph@gmail.com";
             $email_to=$email_new;
-            $rand = "3";
+            // $rand = "3";
             $message_to='Hi,<br/> We have recieved your request to sign in for "Takshak Miles", ';
             $message_to.='an online competition to travel and collect points through <strong>Mozilla Stumbler</strong>, ';
             $message_to.='an android app(firefox os app also available) and get rewarded.<br/><br/>';
