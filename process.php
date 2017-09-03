@@ -173,7 +173,7 @@ if(isset($_POST['submit_new']))
                             echo '<tr><td>Global Rank: </td> <td>'.$globalrank_print.'</td</tr>';
                             echo '</table>';
                             }
-                            echo '  <strong><a href="http://takshaktravel.herokuapp.com/update.php">Click here</a> if you want to try updating.</strong>';
+                            echo '  <strong><a href="update.php">Click here</a> if you want to try updating.</strong>';
                             echo '</div>';
 
 
