@@ -125,7 +125,10 @@ if($email!='The Registered E-mail')
           <span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;After that, login with your Firefox account using your "<?php echo $email; ?>" or create a new account<br/><br/>
               <span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;<span style="font-weight:bold;"> 5. Now, you change the nickname to "<?php echo $nick; ?>"</span> (You can always find your nick name by searching your email in the home page)<br/><br/>
            <h4> <strong>That's mostly it. Guess you're all set to go. Happy wandering!
-<br/><br/></strong></h4>
+<br/><br/></strong></h4></center>
+              </div></div></section>
+<section class="testimonials">
+    <center>
                <h3> Psst! It would be great for you to consider these as well:</h3>
             <span class="glyphicon glyphicon-cloud"></span>&nbsp;&nbsp;&nbsp;1. You don't have to be connected to the internet to collect wander points.<br/><br/>
          <span class="glyphicon glyphicon-cloud"></span>&nbsp;&nbsp;&nbsp;2. However, it is advised to <strong>turn ON 'location'</strong> in Android settings.<br/><br/>
@@ -136,15 +139,15 @@ if($email!='The Registered E-mail')
          <span class="glyphicon glyphicon-cloud"></span>&nbsp;&nbsp;&nbsp;  7. You might not appear in the leaderboard if you've less than 10 points.<br> Don't worry you, because a stroll around your home can easily get you your 10 points.<br/><br/>
                                                 Cheers!<br>
                                                 <br>
-
+              </center></section>
+     <section class="features">
+        <div class="container">
+                        <div class="row">
 P.S.: By using the app you're contributing to the open source community :) For more details <a href="https://location.services.mozilla.com/">click here</a>.<br><br>
-            <span class="icon-checkmark"></span> You can always contact us at <h3>takshak17app@gmail.com</h3><br/><h3>Abhinav T K : 9400506889<br></h3><br/>
-    <h4 style="padding-bottom:10px;">Check out our <a href="process.php">leaderboard</a> for rank details.</h4>
-              </center>
-        </div>
-            </div>
-
-    </section>
+            <span class="icon-checkmark"></span> You can always contact us at <h3>takshak17app@gmail.com</h3><h3>Abhinav T K : 9400506889</h3><br/>
+   <center> <h4 style="padding-bottom:10px;">Check out our <a href="process.php">leaderboard</a> for rank details.</h4></center>
+              
+            </div></div></section>
             <footer class="site-footer">
         <div class="container">
             <div class="row">
