@@ -56,7 +56,7 @@ if(isset($_POST['submit_new']))
             if ($response){
                 $email_success=3;
             }
-            var_dump($response);
+            //var_dump($response);
         }
     }
 }
