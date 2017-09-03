@@ -1,5 +1,6 @@
 <?php
 error_reporting(0);
+
 require_once('connectvars.php');
 $dbc=mysqli_connect(DB_HOST2325,DB_USER2325,DB_PASSWORD2325,DB_NAME2325) or die('could not connect to database :((((.');
 
@@ -137,7 +138,7 @@ if($email!='The Registered E-mail')
                                                 <br>
 
 P.S.: By using the app you're contributing to the open source community :) For more details <a href="https://location.services.mozilla.com/">click here</a>.<br><br>
-            <span class="icon-checkmark"></span> You can always contact us at <h3>takshak17app@gmail.com</h3><br/><br/>
+            <span class="icon-checkmark"></span> You can always contact us at <h3>takshak17app@gmail.com</h3><br/><h3>Abhinav T K : 9400506889<br></h3><br/>
     <h4 style="padding-bottom:10px;">Check out our <a href="process.php">leaderboard</a> for rank details.</h4>
               </center>
         </div>
@@ -148,7 +149,7 @@ P.S.: By using the app you're contributing to the open source community :) For m
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    <h5>Takshak © 2017</h5></div>
+                    <h5>Contact : 9400506889</h5></div>
                 <div class="col-sm-6 social-icons"><a href="https://www.facebook.com/TakshakOfficial/"><i class="fa fa-facebook"></i></a><a href="https://twitter.com/takshakofficial"><i class="fa fa-twitter"></i></a><a href="https://www.instagram.com/takshak_17"><i class="fa fa-instagram"></i></a></div>
             </div>
         </div>

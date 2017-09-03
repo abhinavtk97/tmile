@@ -224,7 +224,7 @@ if(isset($_POST['submit_new']))
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    <h5>Takshak © 2017</h5></div>
+                    <h5>Contact : 9400506889</h5></div>
                 <div class="col-sm-6 social-icons"><a href="https://www.facebook.com/TakshakOfficial/"><i class="fa fa-facebook"></i></a><a href="https://twitter.com/takshakofficial"><i class="fa fa-twitter"></i></a><a href="https://www.instagram.com/takshak_17"><i class="fa fa-instagram"></i></a></div>
             </div>
         </div>
