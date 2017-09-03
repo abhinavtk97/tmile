@@ -1,5 +1,7 @@
+<html>
+    <body>
 <?php
-error_reporting(0);
+//error_reporting(0);
 if(isset($_GET['type'])||isset($_POST['rand']))
 { if($_GET['type']==send)
     $sendic=1;
