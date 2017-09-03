@@ -154,6 +154,8 @@ P.S.: By using the app you're contributing to the open source community :) For m
             </div>
         </div>
     </footer>
+     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
 
