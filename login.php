@@ -17,7 +17,7 @@ if(isset($_GET['type'])||isset($_POST['rand']))
       $email_check=$_GET['email'];
       $rand_check=$_GET['rand'];
       var_dump($email_check);
-      $query='SELECT * FROM email_verify WHERE email="'.$email_check.'" AND rand="'.$rand_check.'"';
+      $query='SELECT * FROM email_verify WHERE email="'.$email_check.'"';
       $data=mysqli_query($dbc,$query);
       if(mysqli_num_rows($data)>0)
       {
