@@ -43,7 +43,7 @@ if(isset($_POST['submit_new']))
     if(!empty($_POST['search_mail']))
     {
         $email_new=mysqli_real_escape_string($dbc,trim($_POST['search_mail']));
-        $rand=rand(2345617638903386387,153781531918602836912631);
+        $rand=rand(123456789,987654321);
         $query='SELECT * FROM our_travel WHERE email="'.$email.'"';
         $data=mysqli_query($dbc,$query);
         if(mysqli_num_rows($data)<1)
