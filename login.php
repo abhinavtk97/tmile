@@ -108,7 +108,7 @@ else
                 }
                 $query='INSERT INTO our_travel (`nick`,`email`,`name`,`password`,`college`,`phno`) VALUES ';
                 $query.='("'.$nick.'","'.$email.'","'.$name.'","'.$password.'","'.$college.'","'.$phno.'")';
-                mysqli_query($dbc,$query) or die("Error adding user . Did you already register with the email id");
+                mysqli_query($dbc,$query) or die("Did you already register with the email id. If not, try refreshing the leaderboard page to see if you can see your name or try again later ");
 
                 $query='UPDATE email_verify SET used=1 WHERE email="'.$email.'"';
                 mysqli_query($dbc,$query);
