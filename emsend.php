@@ -1,4 +1,5 @@
-
+<html>
+    <body>
 <?php
 error_reporting(0);
 if(isset($_GET['type'])||isset($_POST['rand']))
@@ -9,6 +10,7 @@ if(isset($_GET['type'])||isset($_POST['rand']))
       echo 'get';
       $email_new=$_GET['email'];
       $rand=$_GET['rand'];
+      var_dump($rand);
         $subject_to='Takshak Miles Confirmation';
             $email_to=$email_new;
             $message_to='Hi,<br/> We have recieved your request to sign in for "Takshak Miles", ';
