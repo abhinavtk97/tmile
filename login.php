@@ -181,18 +181,18 @@ $headers = "From: mile@takshak.in";
             <section class="testimonials">
 
         <div align="center">
-         <a href="http://hashtagofficial.in" target="_blank"><img src="/sponsor/images/logo.png" alt="Hashtag" id="logo" width="200"></a>
+         <a href="http:/takshak.in" target="_blank"><img src="/assets/img/logo.png" alt="Hashtag" id="logo" width="200"></a>
 
             <div id="main_content2">
-                <a href="http://hashtagofficial.in/travel/" target="_blank" style="text-decoration:none; color:#FFF;">"Travel To Track"</a>
+                <a href="http://takshkamile.herokuapp.com" target="_blank" style="text-decoration:none; color:#FFF;">"T-Mile"</a>
             </div>
         </div>
         <div id="login_main" align="center">
             <?php
                 if($sys_verified==0 && $used==1)
-                    echo 'You seems to have already registered. Go back to the <a href="http://hashtagofficial.in/travel/" style="color:blue;" title="Home Page">home page</a> and enter your e-mail.<br/> Happy Travelling.<br/>';
+                    echo 'You seems to have already registered. Go back to the <a href="http://takshakmile.herokuapp.com/" style="color:blue;" title="Home Page">home page</a> and enter your e-mail.<br/> Happy Travelling.<br/>';
                 else if($sys_verified==0)
-                    echo 'Invalid URL. Are you sure you registered in the <a href="http://hashtagofficial.in/travel/">home page</a>?<br/>';
+                    echo 'Invalid URL. Are you sure you registered in the <a href="http://takshakmile.herokuapp.com/">home page</a>?<br/>';
                 else if($verific==1&& $sys_verified==1)
                 {
                     if($verific==1)
