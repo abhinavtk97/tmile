@@ -9,6 +9,7 @@ $used=0;
 $plain_login=0;
 $email=null;
 
+
 if(isset($_GET['type'])||isset($_POST['rand']))
 { if($_GET['type']==verify)
     $verific=1;
