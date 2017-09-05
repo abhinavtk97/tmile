@@ -86,10 +86,10 @@
     </div>
 
         <section class="testimonials">
-        <h2 class="text-center">Win Exciting prices just by wandering!</h2>
+        <h2 class="text-center">Install the moz stumbler app . Let it run in the background!</h2>
         <blockquote>
-            <p>For details on how to participate click<a href="howto.php"> here </a></p>
-            <footer>T-Mile Team</footer>
+            <p>For details on how to participate and for the moz app, click<a href="howto.php"> here </a></p>
+            <footer>You'll be rewarded points for every bit of wandering you do and the one with the most points will always be the winner</footer>
         </blockquote>
     </section>
     <section class="features">
