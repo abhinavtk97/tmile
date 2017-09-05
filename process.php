@@ -157,6 +157,7 @@ if(isset($_POST['submit_new']))
                             if($score_print==0)
                             {
                                 echo "Hi, ".$name_print." (Nick Name: <strong>".$nick_print."</strong>)<br/><br/>";
+                                echo "Click <a href='nickchange.php?type=nick&email=".$email."'>here</a> if you need to change your nickname <br><br>";
                                 echo "Please wait. Your details haven't shown up yet. <br/>KEEP CALM, It may take some time to become 'active' for the first time.<br/> Do check our ";
                                 echo '<a href="howto.php?email='.$email.'">how to</a> page to see if you have done something wrong.<br/> <strong>-Have you collected 10 points?</strong><br/>
                             <strong>-Is your nick name given in the app same as that printed above?</strong><br/><br/>
