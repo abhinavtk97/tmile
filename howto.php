@@ -31,7 +31,7 @@ if($email!='The Registered E-mail')
         $email=$row['email'];
         $nick=$row['nick'];
         $message='Your nick name :<br/><span style="font-size:20px;">'.$nick.'</span><br/>
-        Note: e-mail id is case sensitive.';
+        Note: e-mail id is case sensitive.<br><h4>Please do scroll down to know how to participate</h4>';
     }
     else
     {
@@ -124,7 +124,7 @@ if($email!='The Registered E-mail')
 
           <span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;After that, login with your Firefox account using your "<?php echo $email; ?>" or create a new account<br/><br/>
               <span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;&nbsp;<span style="font-weight:bold;"> 5. Now, you change the nickname to "<?php echo $nick; ?>"</span> (You can always find your nick name by searching your email in the home page)<br/><br/>
-              <h3>If you cannot change your Nickname in the app, login <a href="process.php">here</a>and click on change nickname . Then change the nickname to what is shown in your android app</h3><br>
+              <h3>If you cannot change your Nickname in the app, login <a href="process.php">here</a> and click on change nickname . Then change the nickname to what is shown in your android app</h3><br>
               <h4>Do turn off "Upload only on Wifi" for best results</h4><br>
            <h4> <strong>That's mostly it. Guess you're all set to go. Happy wandering!
 <br/><br/></strong></h4></center>
