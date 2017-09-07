@@ -45,8 +45,8 @@ echo("<script>console.log('hi');</script>");$arr = json_decode($json);
     echo $l;
     $s=$l/10;
    $i=0;
-    if($k==20){
-        $k=30;
+    if($k==30){
+        $k=40;
         $j=$j+1;
         continue;
     }
